@@ -56,7 +56,6 @@ class RepresentacaoController {
         }
       );
     } catch (error) {
-      console.log("to aqui");
       SistemaService.apagarCertificado(caminhoCertificado);
       return next(error);
     }
