@@ -1,5 +1,5 @@
-const api = {
-  pegarRepresentacao(atributosCertificado) {
+class Api{
+  static pegarRepresentacao(atributosCertificado) {
     return {
       ca: atributosCertificado.ca,
       key: atributosCertificado.key,
@@ -8,9 +8,9 @@ const api = {
       path: "/passaporte/api/auth/representacoes",
       rejectUnauthorized: false
     };
-  },
+  }
 
-  pegarToken(atributosCertificado, representacao) {
+  static pegarToken(atributosCertificado, representacao) {
     return {
       ca: atributosCertificado.ca,
       key: atributosCertificado.key,
@@ -22,4 +22,4 @@ const api = {
   }
 };
 
-export default api
+export default Api

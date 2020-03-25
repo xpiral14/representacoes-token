@@ -18,6 +18,7 @@ class App {
   execRoutes() {
     this.app.use("/obter-token", tokenRouter);
     this.app.use((err, req, res, next) => {
+      console.log(err)
       return res.status(500).json(err.message);
     });
   }
