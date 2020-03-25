@@ -1,7 +1,6 @@
 import "dotenv";
 import express from "express";
 import tokenRouter from "./routes/token";
-import bodyParser from "body-parser";
 
 class App {
   constructor() {

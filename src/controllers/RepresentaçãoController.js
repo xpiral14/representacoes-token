@@ -1,8 +1,6 @@
-import https from "https";
-import api from "../config/api";
-import RepresentacaoService from "../Services/RepresentacaoService";
-import TokenService from "../Services/TokenService";
-import SistemaService from "../Services/SistemaService";
+import RepresentacaoService from "../services/RepresentacaoService";
+import TokenService from "../services/TokenService";
+import SistemaService from "../services/SistemaService";
 
 class RepresentacaoController {
   static obterToken(req, res, next) {
